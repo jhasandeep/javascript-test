@@ -1,0 +1,31 @@
+const A = "abcdef" 
+const B = "cdes" 
+
+let C 
+if(A.length > B.length){
+    C = A.length
+}
+
+else{
+    C= B.length
+}
+
+let count = 0
+
+// console.log(C)
+
+for (let i = 0; i < C; i++){
+    if(A[i]===B[i] ){
+        count +=1
+    }
+    
+    else{
+        for(let j=0; j< C ; j++){
+            if(A[j] === B[i]){
+                count+=1
+            }
+        }
+    }
+}
+
+console.log(count)
